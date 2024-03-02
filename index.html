@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken Theme">
+	<!-- Page Title -->
+	<title>Aidan Warner</title>
+	<!-- Google Fonts css-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+	<!-- Bootstrap css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Font Awesome icon css-->
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<!-- Main custom css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	
+	<!-- Coming Soon Wrapper start -->
+	<div class="comming-soon">
+		<div class="comming-soon-info">
+			<div class="comming-soon-inner">				
+				<!-- Logo Start -->
+				<div class="logo">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<!-- Logo end -->
+
+				<div class="site-info">
+					<h2>I'm launching my <span>New Website</span></h2>
+					<p>My new site is going to be here soon!<br />I'm working hard to make it perfect.</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Contact Form start -->
+		<div class="contact-form">
+			<div class="contact-box">
+				<h2 class="title">Contact Us</h2>
+				<p>Sign up to my newsletter, and I'll provide updates as and when I have more to share!<p>
+				
+					<iframe width="540" height="570" src="https://e26c937b.sibforms.com/serve/MUIFAO1-vfZ-SrJrbRzOahZ83uHBuhokPYfo8ZkALa-MZ2r2Ut8dgXjFD-LB0tPqD2Q-I2h1QgaOj_DvCP_PZSz0Qe5Rx_i8rZIxE8Kro4i8DupuFFibhfcWw4VQC5NcAiud06Q34ftvkD1NKNHjqyaoG8jTxnuvRdDJyebOYCFN0PHid5zQ852HFZpUmS02D5WPSnQhtDKL00td" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+			</div>
+		</div>
+		<!-- Contact Form end -->
+	</div>
+	<!-- Coming Soon Wrapper end -->
+	
+    <!-- Jquery Library File -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- Timer counter js file -->
+	<script src="js/countdown-timer.js"></script>
+	<!-- SmoothScroll -->
+	<script src="js/SmoothScroll.js"></script>
+    <!-- Bootstrap js file -->
+	<script src="js/bootstrap.min.js"></script>
+    <!-- Main Custom js file -->
+	<script src="js/function.js"></script>
+	<!-- Countdown Script start -->
+	<script>
+        $(document).ready(function (){
+			//var myDate = new Date("08/04/2019");
+			var myDate = new Date();
+			myDate.setDate(myDate.getDate() + 2);
+            $("#countdown").countdown(myDate, function (event) {
+                $(this).html(
+                    event.strftime(
+                        '<div class="timer-wrapper"><div class="time">%D</div><span class="text">Days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">Hours</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">Minutes</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">Seconds</span></div>'
+                    )
+                );
+            });
+
+        });
+    </script>
+	<!-- Countdown Script end -->
+</body>
+</html>
